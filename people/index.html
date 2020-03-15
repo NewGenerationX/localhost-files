@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    
+    <div class="body">
+
+        <h2>Select the person you want to see</h2>
+
+        <form>
+
+            <select id="select-id" class="hide">
+            </select><label id="id-label" class="hide"> Select person id</label>
+
+            <br>
+
+            <label for="js-btn" id="name-label">Search by name:</label> <br>
+            <input type="text" id="select-name">
+            
+            <br>
+            <input type="button" id="js-btn" class="js-name-btn btn" value="click to search with id">
+        
+        </form> <!-- end of form for selecting specific objects in server -->
+
+        <form>
+            <br>
+            <label for="#add-btn" class="labelAndBr--add-btn">click here to add a person</label>
+            <br class="labelAndBr--add-btn">
+            <button id="add-btn" class="info-btn green">add a person</button>
+
+            <input type="text" id="name-input" class="info-input hide" placeholder="person's name" required>
+            <input type="text" id="birth-date-input" class="info-input hide" placeholder="person's birth date" required>
+            <input type="text" id="address-input" class="info-input hide" placeholder="person's address" required>
+            <input type="text" id="job-input" class="info-input hide" placeholder="person's job" required>
+            <br>
+            <button id="add-person-btn" class="info-btn green hide">add a person</button>
+            <button id="close-btn" class="info-btn red hide">close</button>
+
+        </form> <!-- end of form for adding people -->
+
+        <br>
+
+        <table id="searched">
+
+            <!-- this is where the people you search for will appear -->
+
+        </table>
+
+        <br>
+
+        <table>
+
+            <tbody class="people-info">
+
+                <!-- This is where the data from display_people.php goes -->
+
+            </tbody>
+
+        </table> <!-- end of table -->
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

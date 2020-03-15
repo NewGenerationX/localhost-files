@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div id="container" class="col-xs-6 col-xs-offset-3">
+        <div class="row">
+            <h2>search our database</h2>
+
+            <input type="text" name="search" class="form-control" id="search" placeholder="Search our inventory">
+            <br>
+            <br>
+
+            <h2 class="bg-success" id="result"></h2>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-6">
+
+                <form method="POST" id="add-car-form" action="add_cars.php">
+
+                    <div class="form-group">
+
+                        <label for="car-name">Add a car</label>
+
+                        <input type="text" name="car_name" class="form-control" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input type="submit" value="add car" class="btn btn-primary">
+
+                    </div>
+
+                </form>
+                
+                <div class="row">
+
+                    <div id="col-xs-6">
+
+                        <table class="table">
+
+                            <thead>
+                                <tr>Id</tr>
+                                <tr>Name</tr>
+                            </thead>
+
+                            <tbody id="show-cars">
+
+                                
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="col-xs-6">
+
+                        <div id="action-container">
+
+                        </div>
+
+                    </div>
+
+                </div><!--End of show cars row -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
